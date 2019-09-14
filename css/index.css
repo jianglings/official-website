@@ -1,0 +1,446 @@
+.header {
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    color: #fff;
+}
+
+.header-container .items-fold {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-container {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-container img {
+    width: 10%;
+    padding: 10px 0;
+}
+
+.menu-fold {
+    display: none;
+}
+
+.menu-con {
+    height: 150px;
+    line-height: 150px;
+}
+
+.menu-con ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-con ul li {
+    width: 100px;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-con ul li:hover {
+    color: rgb(65, 126, 117);
+}
+
+.header-container .title {
+    font-size: 46px;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .menu-con {
+        display: none;
+    }
+    .header-container .title {
+        padding: 12vw 0;
+    }
+}
+
+@media (min-width:768px) {
+    .header-container {
+        padding: 40px 0 80px;
+    }
+}
+
+/* 新品介绍 */
+
+.newcofee {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    background: url(../images/icon01.png) no-repeat;
+    background-size: 27px 28px;
+    height: 28px;
+    line-height: 28px;
+    margin: 60px 0 40px;
+    font-weight: bold;
+    text-indent: 40px;
+    font-size: 16px;
+}
+
+.pics {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.pics .left, .pics .right {
+    flex-grow: 1;
+}
+
+.pics .left img {
+    display: block;
+    width: 100%;
+}
+
+.pics .up {
+    display: flex;
+}
+
+.pics .up img {
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.pics .right .down img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+    .newcofee .pics {
+        flex-wrap: wrap;
+    }
+}
+
+/* 咖啡列表 */
+
+.cofee {
+    width: 100%;
+}
+
+.cofee-name ul {
+    display: flex;
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.cofee-name .cofee-item {
+    position: relative;
+    flex-grow: 1;
+    width: 100px;
+    text-align: center;
+}
+
+.cofee-name .cofee-item .active {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%);
+    border-bottom: 3px solid #000;
+}
+
+.cofee-detail {
+    position: relative;
+    width: 100%;
+    height: 410px;
+}
+
+.cofee-detail .item {
+    position: absolute;
+    display:none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 13px;
+    border: 1px solid #ccc;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.cofee-detail .item1 {
+    display: block;
+}
+
+.cofee-detail .item>li {
+    width: 50%;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.cofee-detail .item>li>div {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.cofee-detail .item img {
+    width: 100%;
+    margin-top: 12 px;
+}
+
+.cofee-detail .item a {
+    display: block;
+    height: 34px;
+    margin-top: 19px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.cofee-detail .item p {
+    font-size: 12px;
+    color: #565656;
+    margin: 19px 0;
+    height: 20px;
+}
+
+@media (max-width:768px) {
+    .cofee-detail .item>li {
+        width: 100%;
+    }
+    .cofee-detail .item img {
+        width: 158px;
+    }
+    .cofee-detail .item p {
+        margin: 2px 0;
+    }
+}
+
+/* 新闻 */
+
+.news {
+    width: 100%;
+    min-height: 880px;
+    background-image: url(../images/bg7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    width: 100%;
+    padding: 100px 0 60px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .title {
+        padding: 12vw 0;
+    }
+}
+
+.title img {
+    width: 27px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.news .news-detail li {
+    display: inline-block;
+    width: 48%;
+    font-size: 16px;
+    margin-top: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .news .news-detail li {
+        width: 90%;
+        display: block;
+    }
+}
+
+.news .news-detail img {
+    max-width: 300px;
+    width: 97%;
+    margin: 0 auto 30px;
+}
+
+.news .news-detail p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 97%;
+    height: 50px;
+    margin-left: 2%;
+    line-height: 25px;
+    color: #555;
+    overflow: hidden;
+}
+
+/* 关于我们 */
+
+.aboutUs-titles .title {
+    color: #363d70;
+}
+
+.aboutUs-titles .container {
+    text-align: center;
+}
+
+.aboutUs-titles .container p {
+    margin: 13px 0;
+    font-size: 12px;
+}
+
+/* 顶级咖啡 */
+
+.topcofee .container {
+    margin: 80px auto;
+    margin-bottom: 161px;
+}
+
+.topcofee ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0;
+}
+
+.topcofee ul li {
+    width: 50%;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.topcofee ul li:nth-of-type(1) {
+    text-align: center;
+}
+
+.topcofee ul li:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    .topcofee ul li {
+        width: 90%;
+    }
+    .topcofee li img{
+        width: 100%;
+    }
+}
+
+@media (min-width:769px){
+    .topcofee li img{
+        max-width: 432px;
+    }
+}
+.topCoffee li img{
+    width: 100%;
+}
+
+.topcofee ul li h3{
+    padding: 80px 0 18px;
+    font-size: 36px;
+}
+.topcofee ul li p{
+    margin: 10px 0;
+    font-size: 12px;
+}
+.topcofee ul li button{
+    width: 146px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #363d70;
+    color: #fff;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 页脚 */
+.footer .container {
+    width: 100%;
+    background-color: #363d70;
+    height: 101px;
+    max-width: inherit;
+}
+.footer .container ul{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    height: 16px;
+    line-height: 16px;
+}
+.footer .container ul a{
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer .container ul span{
+    color: #ccc;
+    padding: 0 8px;
+}
+
+
+
+/* 动画 */
+.logoMoveAni{
+    animation: logoMove 1s ease;
+}
+
+.toRightAni{
+    animation: toRight 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+/* logo动画 */
+@keyframes logoMove{
+    0%{
+        transform: perspective(400px) rotate3d(0,1,0,90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40%{
+        transform: perspective(400px) rotate3d(0,1,0,-20deg);
+        animation-timing-function: ease-in;
+    }
+    60%{
+        transform: perspective(400px) rotate3d(0,1,0,10deg);
+        opacity: 1;
+    }
+    80%{
+        transform: perspective(400px) rotate3d(0,1,0,-5deg);
+    }
+    100%{
+        transform: perspective(400px);
+        opacity: 1;
+    }
+}
+
+/* 从左向右动画 */
+@keyframes toRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
